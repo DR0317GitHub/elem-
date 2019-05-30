@@ -1,0 +1,109 @@
+.page-index {
+  width: 100%;
+}
+
+/* 头部 */
+
+.index-header {
+  padding: 10px;
+  height: 44px;
+  background-color: #FF8C69;
+}
+
+.index-location {
+  display: inline-block;
+  width: 40%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  height: 44px;
+  line-height: 44px;
+  color: aliceblue;
+}
+
+.index-search {
+  display: inline-block;
+  width: 55%;
+  float: right;
+}
+
+/* 轮播图 */
+
+.index-swiper-item {
+  width: 100%;
+}
+
+.index-grid {
+  width: 100%;
+}
+
+/* 立即开通会员 */
+
+.index-vip {
+  background: #DEB887;
+  padding: 10px;
+  width: 90%;
+  margin: 0 auto;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.index-vip1 {
+  font-size: 14px;
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+.index-vip2 {
+  float: right;
+}
+
+/* 猜你喜歡 */
+
+.index-like {
+  width: 95%;
+  height: 100px;
+  margin: 0 auto;
+}
+
+.index-like-text {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.index-like-img {
+  float: left;
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.index-like-center {
+  float: left;
+  line-height: 2;
+  font-size: 12px;
+  width: 65%;
+}
+
+.index-like-title {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.index-like-right {
+  float: right;
+}
+
+.index-like-view {
+  height: 100px;
+  margin-bottom: 10px;
+}
+
+.loadmore {
+  background: rgb(238, 238, 238);
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  bottom: -55px;
+  position: absolute;
+  text-align: center;
+}

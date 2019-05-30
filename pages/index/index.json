@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "search-bar": "mini-antui/es/search-bar/index",
+    "grid": "mini-antui/es/grid/index"
+  }
+}
+  

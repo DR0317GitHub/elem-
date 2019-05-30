@@ -1,0 +1,70 @@
+<view class="page-index">
+  <view class="index-header">
+    <text class="index-location"> 位置: {{location}}                    
+    </text>
+    <view class="index-search">
+      <search-bar value="{{value}}" placeholder="搜索"/>
+    </view>
+  </view>
+  <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}">
+    <block a:for="{{background}}">
+      <swiper-item>
+        <view>
+          <image class="index-swiper-item" src="{{item}}" mode="scaleToFill" />
+        </view>
+      </swiper-item>
+    </block>
+  </swiper>
+  <swiper>
+    <block>
+      <swiper-item>
+        <view>
+          <grid class="index-grid" onGridItemClick="onItemClick" columnNum="{{5}}" list="{{list1[0]}}" />
+        </view>
+      </swiper-item>
+      <swiper-item>
+        <view>
+          <grid class="index-grid" onGridItemClick="onItemClick" columnNum="{{5}}" list="{{list1[1]}}" />
+        </view>
+      </swiper-item>
+    </block>
+  </swiper>
+  <view class="index-vip">
+    <text class="index-vip1">加入超级会员                    
+    </text>
+    <text >每月领20元红包                    
+    </text>
+    <text class="index-vip2">立即开通                    
+    </text>
+  </view>
+  <!-- 猜你喜欢 -->
+  <view class="index-like">
+    <view class="index-like-text">猜你喜歡
+    </view>
+    <view a:for="{{listLike}}" class="index-like-view">
+      <view class="index-like-img">
+        <image style="width: 100px; height:100px;" src="{{item.url}}" mode="scaleToFill"/>
+      </view>
+      <view class="index-like-center">
+        <view class="index-like-title">{{item.title}}
+        </view>
+        <view>月售 {{item.sale}}
+        </view>
+        <view>起送 ¥{{item.upSend}} 配送 ¥{{item.Send}} 
+          <view class="index-like-right">          {{item.time}}分钟  {{item.distance}}        
+          </view>
+        </view>
+        <view>品质联盟
+        </view>
+      </view>
+    </view>
+  </view>
+
+   <view class='loadmore' hidden='{{isShowLoadmore}}'>
+      <view class='loading'></view>
+      <view class='loadmore_tips'>正在加载</view>
+    </view>
+    <view class="loadmore loadmore_line" hidden='{{!isShowNoDatasTips}}'>
+      <view class="loadmore_tips">暂无数据</view>
+     </view>
+</view>

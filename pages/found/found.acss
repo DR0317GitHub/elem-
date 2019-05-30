@@ -1,0 +1,56 @@
+.found-header{
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  margin-top:10px;
+  line-height: 1.5;
+}
+.found-header>view:first-child{
+  font-size: 16px;
+  font-weight: bold;
+}
+.found-header>view:last-child{
+  font-size: 12px;
+  font-weight: 100;
+  color: #999;
+}
+.found-list{
+  width: 45%;
+  margin:5px;
+  display: inline-block;
+  border: 1px solid #eee;
+  font-size: 12px;
+}
+.found-list image{
+  width:100%;
+}
+.found-list>view>view:nth-child(1){
+  font-size: 16px;
+  font-weight: bold;
+}
+.found-list>view>view:nth-child(2){
+ color:#999;
+}
+.found-list>view>view:nth-child(3){
+color:red;
+font-size: 14px;
+margin-bottom: 10px;
+}
+.found-list>view>view:nth-child(3)>text{
+font-size: 10px;
+padding: 2px;
+border: .3px solid red;
+margin-left: 5px;
+}
+.found-list>view>view:nth-child(4){
+font-size: 12px;
+color: #999;
+}
+/* 查看更多 */
+.found-more{
+  font-size: 12px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  color: #999;
+}

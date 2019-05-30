@@ -1,0 +1,39 @@
+{
+  "pages": [
+     "pages/found/found",
+    "pages/index/index",
+   
+    "pages/order/order",
+    "pages/mine/mine",
+    "pages/todos/todos",
+    "pages/add-todo/add-todo"
+  ],
+  "window": {
+    "defaultTitle": "饿了么",
+    "titleBarColor": "#fff",
+    "pullRefresh": true
+  },
+  "tabBar": {
+    "textColor": "#dddddd",
+    "selectedColor": "#49a9ee",
+    "backgroundColor": "#ffffff",
+    "items": [
+      {
+        "pagePath": "pages/index/index",
+        "name": "首页"
+      },
+      {
+        "pagePath": "pages/found/found",
+        "name": "发现"
+      },
+      {
+        "pagePath": "pages/order/order",
+        "name": "订单"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "name": "我的"
+      }
+    ]
+  }
+}
